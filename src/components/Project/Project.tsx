@@ -22,14 +22,14 @@ const Project = ({ imgUrl, title, demoUrl, githubUrl,time,details,languages,libr
 					<img src={imgUrl} alt="" className="h-full w-full block rounded-lg" />
 					<div className="absolute top-0 left-0 h-full w-full bg-[#00000080] flex justify-center items-center gap-8 opacity-0 hover:opacity-100 transition-opacity duration-300 rounded-lg">
 						<button title="showPicture" onClick={() => setShowImage(true)} className="cursor-pointer"><IoExpand className="text-[60px] text-white " /></button>
-						<button title="toDemo" className="cursor-pointer" onClick={() => { goToDemo(demoUrl) }}><img src="/img/toDemo.png" alt="" className="w-[60px]" /></button>
+						<button title="toDemo" className="cursor-pointer" onClick={() => { goToDemo(demoUrl) }}><img src="/Portfolio/img/toDemo.png" alt="" className="w-[60px]" /></button>
 					</div>
 				</div>
 				<div className="w-full h-full flex flex-col gap-4">
 					<div className="flex flex-col ">
 						<div className="flex justify-between items-center">
 							<h1 className="text-[28px] text-mainText dark:text-white font-semibold ">{title}</h1>
-							<button title="toDemo" className="cursor-pointer" onClick={() => { goToDemo(demoUrl) }}><img src="/img/toDemoBlue.png" alt="" className="w-[40px]" /></button>
+							<button title="toDemo" className="cursor-pointer" onClick={() => { goToDemo(demoUrl) }}><img src="/Portfolio/img/toDemoBlue.png" alt="" className="w-[40px]" /></button>
 						</div>
 						<p className="text-[14px] text-[#A6A6A6] font-medium ">{time}</p>
 					</div>
