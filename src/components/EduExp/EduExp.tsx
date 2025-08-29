@@ -5,8 +5,8 @@ import { HashLink as NavLink } from "react-router-hash-link"
 const EduExp = ({eduExps }:EduProps) => {
 	return (
 		<div className="relative ">
-			<img src="/img/bg.png" alt="" className=" absolute z-[200] -rotate-10 -right-10 -top-10 hidden md:block" />
-			<img src="/img/bg.png" alt="" className=" absolute z-[200] rotate-150 -left-10 -bottom-55 md:block" />
+			<img src="/Portfolio/img/bg.png" alt="" className=" absolute z-[200] -rotate-10 -right-10 -top-10 hidden md:block" />
+			<img src="/Portfolio/img/bg.png" alt="" className=" absolute z-[200] rotate-150 -left-10 -bottom-55 md:block" />
 			<div className="relative flex flex-col gap-[88px] justify-between  ">
 				{/* top */}
 				<div className="flex flex-col items-start lg:items-center text-start lg:text-center ">

@@ -4,7 +4,7 @@ import { HashLink as NavLink } from "react-router-hash-link"
 const ToContact = () => {
 	return (
 		<div className="relative w-full h-[375px] px-[20px] flex justify-center items-center lg:px-[70px] mt-40">
-			<img src="/img/bgContact.png" alt="" className="absolute z-[100] h-[375px]" />
+			<img src="/Portfolio/img/bgContact.png" alt="" className="absolute z-[100] h-[375px]" />
 			<div className=" absolute z-[200] w-full h-full flex flex-col lg:flex-row justify-center gap-12 items-center py-[20px] md:py-[30px] lg:py-[111px] px-[20px] lg:px-[100px] ">
 				<div className="w-full text-center lg:text-start ">
 					<h1 className="text-[35px] lg:text-[40px] font-semibold text-white ">Try me out, risk free!</h1>

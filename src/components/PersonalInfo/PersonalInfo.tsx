@@ -17,7 +17,7 @@ const PersonalInfo = ({ name, job, description, img_url }: PersInfo) => {
 		<>
 			<div className="relative w-full h-full dark:bg-dark text-mainText dark:text-white pt-18 ">
 				{/* lines */}
-				<img src="/img/Lines.png" alt="" className="absolute top-14 z-[90] lg:block hidden" />
+				<img src="/Portfolio/img/Lines.png" alt="" className="absolute top-14 z-[90] lg:block hidden" />
 				{/* blue */}
 				<div className="absolute z-[200] left-[70px] w-[80%] lg:w-[40%] h-[350px] rounded-full bg-radial custom-radial"></div>
 				{/* all */}
@@ -33,7 +33,7 @@ const PersonalInfo = ({ name, job, description, img_url }: PersInfo) => {
 					</div>
 					{/* right */}
 					<div className="relative h-full lg:w-[600px] w-full flex justify-center items-center text-center">
-						<img src="/img/squers.png" alt="" className=" z-[205] w-full " />
+						<img src="/Portfolio/img/squers.png" alt="" className=" z-[205] w-full " />
 						<div className="absolute bottom-0 w-[75%] h-[90%] z-[202] bg-[#DFE1FA] left-1/8 rounded-[100%]"></div>
 						<img src={img_url} alt="" className="absolute top-0 h-full z-[210] left-1/6" />
 					</div>

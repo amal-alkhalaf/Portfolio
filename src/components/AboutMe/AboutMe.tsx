@@ -6,8 +6,8 @@ const AboutMe = ({explain,techniq}:AboutMeProps) => {
 		<div className="w-full px-[20px] lg:px-[70px] dark:bg-dark text-mainText dark:text-white flex flex-col-reverse lg:flex-row justify-between">
 			{/* left */}
 			<div className="relative  w-full h-full lg:w-[500px] flex justify-center items-center">
-				<img src="/img/Circles.png" alt="" className="top-2 lg:top-10  absolute z-[200]"/>
-				<img src="/img/teq.png" alt="" className="top-2 w-[93%] lg:top-14 absolute z-[200]"/>
+				<img src="/Portfolio/img/Circles.png" alt="" className="top-2 lg:top-10  absolute z-[200]"/>
+				<img src="/Portfolio/img/teq.png" alt="" className="top-2 w-[93%] lg:top-14 absolute z-[200]"/>
 			</div>
 			{/* right */}
 			<div className="flex flex-col w-full lg:w-[55%] h-full gap-4">
