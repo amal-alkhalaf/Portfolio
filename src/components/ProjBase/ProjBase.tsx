@@ -16,7 +16,7 @@ const ProjBase = ({githubUrl, cards }: ProjBaseProps) => {
 				<p className="text-[#0C96E2] text-[20px] font-medium ">Portfolio</p>
 				<h1 className="text-mainText dark:text-white text-[40px] font-semibold ">My Creative Works</h1>
 				<div className="w-full flex flex-col lg:flex-row gap-8 lg:justify-between items-center">
-					<><h1 className="text-mainTex text-[40px] font-semibold dark:text-white">Latest <span className="text-[#0C96E2]">Projects</span></h1></>
+					<><h1 className="text-mainTex sm:text-[40px] max-sm:text-[35px] font-semibold dark:text-white">Latest <span className="text-[#0C96E2]">Projects</span></h1></>
 					<button title="toGithub" onClick={()=>{goToGitHub(githubUrl)}} className="flex items-center justify-center gap-1 w-[164px] h-[50px] rounded-lg bg-[#0C96E2] text-white text-[14px] font-medium cursor-pointer">View Github <MdArrowOutward className="text-[18px] font-medium text-white  " /></button>
 				</div>
 			</div>

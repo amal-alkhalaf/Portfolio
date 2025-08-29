@@ -11,7 +11,7 @@ const EduExp = ({eduExps }:EduProps) => {
 				{/* top */}
 				<div className="flex flex-col items-start lg:items-center text-start lg:text-center ">
 					<p className="font-medium text-[20px] text-[#0C96E2]">Education and Experience</p>
-					<h1 className="font-semibold text-[40px] text-[#282938] dark:text-white">Education & Experience</h1>
+					<h1 className="font-semibold sm:text-[40px] max-sm:text-[35px] text-[#282938] dark:text-white">Education & Experience</h1>
 				</div>
 				{/* bottom */}
 				<div className="grid grid-flow-row grid-cols-1 lg:grid-cols-2 w-full gap-[46px]">

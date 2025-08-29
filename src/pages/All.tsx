@@ -34,12 +34,12 @@ const All = () => {
 	return (
 		<div className=" w-full  pt-16 dark:bg-dark text-white dark:text-mainText" >
 			{/* hero */}
-			<div id="Home" className="w-full h-[180vh] md:h-[188vh] lg:h-screen">
+			<div id="Home" className="w-full max-sm:h-[170vh] sm:h-[180vh] md:h-[200vh] lg:h-screen">
 				<PersonalInfo name="Eng.Amal Al-Khalaf" job="FullStack Web Developer" description="Agency-quality Webflow websites with the personal touch of a freelancer." img_url="/Portfolio/img/AmalProfile.png" />
 			</div>
 
 			{/* about me */}
-			<div id="AboutMe" className={`w-full h-[210vh] max-sm:h-[200vh] md:h-[250vh] lg:h-[110vh] pt-[80px]`}>
+			<div id="AboutMe" className={`w-full h-[210vh] max-sm:h-[195vh] md:h-[250vh] lg:h-[110vh] pt-[80px]`}>
 				<AboutMe explain="I am a software engineer and am currently studying for a master's degree in software engineering. I am a FullStack web developer using React js and Next js. I always love to develop my experience and skills and I have the ability to always learn new things and work."
 					techniq={[
 						{ name: "HTML5", rate: "95%" },

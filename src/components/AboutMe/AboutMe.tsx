@@ -12,7 +12,7 @@ const AboutMe = ({explain,techniq}:AboutMeProps) => {
 			{/* right */}
 			<div className="flex flex-col w-full lg:w-[55%] h-full gap-4">
 				<div className="w-full flex flex-col gap-2">
-					<h1 className="text-[40px] font-semibold">About Me</h1>
+					<h1 className="sm:text-[40px] max-sm:text-[35px] font-semibold">About Me</h1>
 					<p className="text-[18px]">{explain}</p>
 				</div>
 				<div className="flex flex-col gap-2.5">
