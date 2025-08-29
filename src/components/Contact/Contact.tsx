@@ -16,9 +16,11 @@ const Contact = ({ number, email,user_name, address }: ContactProps) => {
 		emailjs.sendForm('service_ykqcfty', 'template_qoxdsgy', formRef.current)
 			.then(
 				(result) => {
+					console.log(result)
 					alert('This message has been sent successfully.');
 				},
 				(error) => {
+					console.log(error)
 					alert('An error occurred, please try again later.');
 				}
 			);
