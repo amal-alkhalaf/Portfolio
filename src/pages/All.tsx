@@ -35,7 +35,7 @@ const All = () => {
 		<div className=" w-full  pt-16 dark:bg-dark text-white dark:text-mainText" >
 			{/* hero */}
 			<div id="Home" className="w-full h-[150vh] md:h-[188vh] lg:h-screen">
-				<PersonalInfo name="Eng.Amal Al-Khalaf" job="FullStack Web Developer" description="Agency-quality Webflow websites with the personal touch of a freelancer." img_url="/img/AmalProfile.png" />
+				<PersonalInfo name="Eng.Amal Al-Khalaf" job="FullStack Web Developer" description="Agency-quality Webflow websites with the personal touch of a freelancer." img_url="/Portfolio/img/AmalProfile.png" />
 			</div>
 
 			{/* about me */}
