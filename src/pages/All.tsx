@@ -3,7 +3,7 @@ import PersonalInfo from "../components/PersonalInfo/PersonalInfo"
 import AboutMe from "../components/AboutMe/AboutMe"
 import EduExp from "../components/EduExp/EduExp"
 import ToContact from "../components/ToContact/ToContact"
-import { ActiveContext, CardsContext } from "./Major"
+import { ActiveContext, CardsContext, ModeContext } from "./Major"
 import ProjBase from "../components/ProjBase/ProjBase"
 import Contact from "../components/Contact/Contact"
 
@@ -11,6 +11,8 @@ const sections: string[] = ['#Home', '#AboutMe', '#Education', '#Projects', '#Co
 const All = () => {
 	const context = useContext(ActiveContext);
 	const cards = useContext(CardsContext);
+	const mode = useContext(ModeContext)
+	const color: string = mode ? "#1D2130" : "white"
 
 	useEffect(() => {
 		const handleScroll = () => {
@@ -34,12 +36,23 @@ const All = () => {
 	return (
 		<div className=" w-full  pt-16 dark:bg-dark text-white dark:text-mainText" >
 			{/* hero */}
-			<div id="Home" className="w-full max-sm:h-[170vh] sm:h-[180vh] md:h-[200vh] lg:h-screen">
+			<div id="Home" className="w-full max-sm:h-[170vh] sm:h-[180vh] md:h-[200vh] lg:h-[110vh]">
 				<PersonalInfo name="Eng.Amal Al-Khalaf" job="FullStack Web Developer" description="Agency-quality Webflow websites with the personal touch of a freelancer." img_url="/Portfolio/img/AmalProfile.png" />
 			</div>
 
+			<div className="relative w-full py-1.5">
+				<svg width="100%" height="10" >
+					<line x1="0" y1="5" x2="100%" y2="5" stroke={color} strokeWidth="1" strokeDasharray="5 10" />
+				</svg>
+				<div className="absolute left-1/2 top-0 bg-[#EFF2F7] border-[1px] border-mainText dark:border-white border-solid w-[22px] h-[22px] rounded-[100%] flex justify-center items-center">
+					<div className="bg-[#EFF2F7] border-[1px] border-mainText dark:border-white border-solid w-[16px] h-[16px] rounded-[100%] flex justify-center items-center text-mainText font-bold pb-1.5">
+						.
+					</div>
+				</div>
+			</div>
+
 			{/* about me */}
-			<div id="AboutMe" className={`w-full h-[210vh] max-sm:h-[195vh] md:h-[250vh] lg:h-[110vh] pt-[80px]`}>
+			<div id="AboutMe" className={`w-full sm:h-[210vh] max-sm:h-[195vh] md:h-[250vh] lg:h-[110vh] pt-[80px]`}>
 				<AboutMe explain="I am a software engineer and am currently studying for a master's degree in software engineering. I am a FullStack web developer using React js and Next js. I always love to develop my experience and skills and I have the ability to always learn new things and work."
 					techniq={[
 						{ name: "HTML5", rate: "95%" },

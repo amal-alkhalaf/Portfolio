@@ -1,10 +1,7 @@
-import { useContext, useRef } from "react"
+import { useRef } from "react"
 import type { PersInfo } from "../../interfaces"
-import { ModeContext } from "../../pages/Major"
 
 const PersonalInfo = ({ name, job, description, img_url }: PersInfo) => {
-	const mode = useContext(ModeContext)
-	const color: string = mode ? "#1D2130" : "white"
 
 	const linkRef = useRef<HTMLAnchorElement | null>(null);
 
@@ -39,16 +36,7 @@ const PersonalInfo = ({ name, job, description, img_url }: PersInfo) => {
 					</div>
 				</div>
 			</div>
-			<div className="relative w-full py-1.5">
-				<svg width="100%" height="10" >
-					<line x1="0" y1="5" x2="100%" y2="5" stroke={color} strokeWidth="1" strokeDasharray="5 10" />
-				</svg>
-				<div className="absolute left-1/2 top-0 bg-[#EFF2F7] border-[1px] border-mainText dark:border-white border-solid w-[22px] h-[22px] rounded-[100%] flex justify-center items-center">
-					<div className="bg-[#EFF2F7] border-[1px] border-mainText dark:border-white border-solid w-[16px] h-[16px] rounded-[100%] flex justify-center items-center text-mainText font-bold pb-1.5">
-						.
-					</div>
-				</div>
-			</div>
+			
 		</>
 	)
 }

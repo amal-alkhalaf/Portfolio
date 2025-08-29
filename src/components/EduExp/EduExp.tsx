@@ -7,7 +7,7 @@ const EduExp = ({eduExps }:EduProps) => {
 		<div className="relative ">
 			<img src="/Portfolio/img/bg.png" alt="" className=" absolute z-[200] -rotate-10 -right-10 -top-10 hidden md:block" />
 			<img src="/Portfolio/img/bg.png" alt="" className=" absolute z-[200] rotate-150 -left-10 -bottom-55 md:block" />
-			<div className="relative flex flex-col gap-[88px] justify-between  ">
+			<div className="relative flex flex-col gap-[75px] justify-between  ">
 				{/* top */}
 				<div className="flex flex-col items-start lg:items-center text-start lg:text-center ">
 					<p className="font-medium text-[20px] text-[#0C96E2]">Education and Experience</p>
