@@ -31,41 +31,41 @@ const Contact = ({ number, email,user_name, address }: ContactProps) => {
 	return (
 		<div className="w-full h-full py-[80px] flex flex-col gap-14 px-[20px] md:px-[70px] ">
 			<div className="flex flex-col gap-2 text-center lg:text-start">
-				<p className="text-[20px] font-medium text-[#0C96E2] ">Contact</p>
-				<h1 className="text-mainText dark:text-white text-[40px] font-semibold">Let’s Discuss Your <span className="text-[#0C96E2]">Project</span></h1>
+				<p className="sm:text-[20px] text-[15px] font-medium text-[#0C96E2] ">Contact</p>
+				<h1 className="text-mainText dark:text-white text-[35px] sm:text-[40px] font-semibold">Let’s Discuss Your <span className="text-[#0C96E2]">Project</span></h1>
 			</div>
 
 			<div className="w-full h-full flex flex-col lg:flex-row ">
 				<div className="lg:w-[50%] w-full h-full flex flex-col justify-between pb-7 gap-14">
-					<div className="w-[85%] h-[56px] flex gap-[20px]">
-						<div className="h-full w-[62px] bg-[#0C96E2] flex items-center justify-center rounded-lg"><IoCallOutline className="text-white text-[35px]" /></div>
-						<div className="h-full flex flex-col">
-							<p className="text-[#92929D]">Call me</p>
-							<p className="font-medium">{number}</p>
+					<div className="w-full h-[56px] flex gap-[10px] lg:gap-[20px]">
+						<div className="h-[40px] w-[45px] md:w-[62px] md:h-[56px] bg-[#0C96E2] flex items-center justify-center rounded-lg"><IoCallOutline className="text-white text-[30px] md:text-[35px]" /></div>
+						<div className="w-full h-full flex flex-col">
+							<p className="text-[#92929D] text-[14px] sm:text-[16px]">Call me</p>
+							<p className="font-medium text-[14px] sm:text-[16px]">{number}</p>
 						</div>
 					</div>
 
-					<div className="w-[85%] h-[56px] flex gap-[20px]">
-						<div className="h-full w-[62px] bg-[#0C96E2] flex items-center justify-center rounded-lg"><HiOutlineMail className="text-white text-[35px]" /></div>
-						<div className="h-full flex flex-col">
-							<p className="text-[#92929D]">Email me</p>
-							<p className="font-medium">{email}</p>
+					<div className="flex h-full w-full gap-[10px] lg:gap-[20px]">
+						<div className="h-[40px] w-[45px] md:w-[62px] md:h-[56px] bg-[#0C96E2] flex items-center justify-center rounded-lg"><HiOutlineMail className="text-white text-[30px] md:text-[35px]" /></div>
+						<div className="h-full w-[74%] flex flex-col">
+							<p className="text-[#92929D] text-[14px] sm:text-[16px]">Email me</p>
+							<p className="w-full font-medium text-[14px] sm:text-[16px]">{email}</p>
 						</div>
 					</div>
 
-					<div className="w-[85%] h-[56px] flex gap-[20px]">
-						<div className="h-full w-[62px] bg-[#0C96E2] flex items-center justify-center rounded-lg"><FaTelegramPlane className="text-white font-light text-[35px]" /></div>
+					<div className=" h-[56px] flex  gap-[10px] lg:gap-[20px]">
+						<div className="h-[40px] w-[45px] md:w-[62px] md:h-[56px] bg-[#0C96E2] flex items-center justify-center rounded-lg"><FaTelegramPlane className="text-white font-light text-[30px] md:text-[35px]" /></div>
 						<div className="h-full flex flex-col">
-							<p className="text-[#92929D]">Send me</p>
-							<p className="font-medium">{user_name}</p>
+							<p className="text-[#92929D] text-[14px] sm:text-[16px]">Send me</p>
+							<p className="font-medium text-[14px] sm:text-[16px]">{user_name}</p>
 						</div>
 					</div>
 
-					<div className="w-[85%] h-[56px] flex gap-[20px]">
-						<div className="h-full w-[62px] bg-[#0C96E2] flex items-center justify-center rounded-lg"><HiOutlineLocationMarker className="text-white font-light text-[35px]" /></div>
+					<div className=" h-[56px] flex  gap-[10px] lg:gap-[20px]">
+						<div className="h-[40px] w-[45px] md:w-[62px] md:h-[56px] bg-[#0C96E2] flex items-center justify-center rounded-lg"><HiOutlineLocationMarker className="text-white font-light text-[30px] md:text-[35px]" /></div>
 						<div className="h-full flex flex-col">
-							<p className="text-[#92929D]">Address</p>
-							<p className="font-medium">{address}</p>
+							<p className="text-[#92929D] text-[14px] sm:text-[16px]">Address</p>
+							<p className="font-medium text-[14px] sm:text-[16px]">{address}</p>
 						</div>
 					</div>
 				</div>
