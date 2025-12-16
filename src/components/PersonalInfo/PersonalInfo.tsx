@@ -25,7 +25,7 @@ const PersonalInfo = ({ name, job, description, img_url }: PersInfo) => {
 							<h1 className="text-mainText text-[40px]  lg:text-[35px] font-bold dark:text-white"><span className="font-normal">HEY! </span>I’m  <br /><span className="text-[#0C96E2] lg:text-[40px]">{name},</span><br />{job} <br /></h1>
 							<p className="text-secText dark:text-white lg:w-[80%] lg:text-[18px]">{description}</p>
 						</div>
-						<a href="https://drive.google.com/file/d/1--s3U2wzo97UdtxSYAgEJAVEjo26jCZu/view?usp=drivesdk" download="Eng.Amal_Al-Khalaf_CV.pdf" ref={linkRef} className="hidden">download</a>
+						<a href="/Portfolio/files/Eng.Amal_AlKhalaf.pdf" download="Eng.Amal_Al-Khalaf_CV.pdf" ref={linkRef} className="hidden">download</a>
 						<button title="downloadCV" onClick={handleDownload} className="bg-[#FFFFFF99] dark:bg-[#0C96E299] w-[155px] h-[50px] rounded border-[1px] border-[#0C96E2] cursor-pointer hover:bg-[#DFE1FA] hover:text-[#0C96E2]">Download Cv</button>
 					</div>
 					{/* right */}
